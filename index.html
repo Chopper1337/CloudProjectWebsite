@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Emulator Compatability Database</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Emulator Compatability Database</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary m-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Add game
+        </button>
+  
+        <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="gameTitle" class="form-label">Title</label>
+                  <input type="text" class="form-control" id="gameTitle" aria-describedby="GameTitle">
+                </div>
+                <div class="mb-3">
+                  <label for="gameDev" class="form-label">Developer</label>
+                  <input type="text" class="form-control" id="gameDev" aria-describedby="GameDeveloper">
+                </div>
+                <div class="mb-3">
+                  <label for="gamePub" class="form-label">Publisher</label>
+                  <input type="text" class="form-control" id="gamePub" aria-describedby="GamePublisher">
+                </div>
+                <div class="mb-3">
+                  <label for="gameYear" class="form-label">Year</label>
+                  <input type="number" class="form-control" min="1950" max="2022" id="gameYear">
+                </div>
+                <div class="mb-3">
+                  <label for="gamePlatforms" class="form-label">Platforms</label>
+                  <input type="text" class="form-control" id="gamePlatforms" aria-describedby="gamePlatforms">
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="Game cover">
+    <div class="card-body">
+      <h5 class="card-title">Game Title</h5>
+      <p class="card-text">Game Description</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Year</li>
+      <li class="list-group-item">Developer - Publisher</li>
+      <li class="list-group-item">Platforms</li>
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+        </div>
+    </body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>
