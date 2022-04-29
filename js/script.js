@@ -1,6 +1,6 @@
 function API(){
     //Fetch from API
-    fetch("https://l2o83z1y3a.execute-api.eu-west-1.amazonaws.com/GetGame", {
+    fetch("https://aqtbxxpcwc.execute-api.eu-west-1.amazonaws.com/GetData", {
         "method": "GET"
     })
     .then(function(response){
@@ -76,7 +76,6 @@ function API(){
         var i = 0;
         //For each of the arrays contents
         while(i < 6){
-            var countryName = data.data[i].country;
       
             //If title value is greater than zero, do this function and pass through required values, else exit loop
             createGameCard()
@@ -97,12 +96,16 @@ function CreateGame(){
     const requestOptions = {
         method: 'PUT',
         headers: {  
-            'Access-Control-Allow-Origin' : '*'
+            'Access-Control-Allow-Origin' : '*',
+            'mode':'no-cors'
             /*'Content-Type': 'application/json',
             'Authorization': 'Bearer my-token',
             'My-Custom-Header': 'foobar'*/
         },
-        body: JSON.stringify({ Title: title })
+        body: JSON.stringify({
+            "id":10,
+            "Title": title
+        })
     };
-    fetch("https://h48zf451j2.execute-api.eu-west-1.amazonaws.com/InsertDataFunction", requestOptions)
+    fetch("https://g4mby9pos7.execute-api.eu-west-1.amazonaws.com/AddData", requestOptions)
 }
